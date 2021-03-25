@@ -1,0 +1,118 @@
+ <div class="container mt-3" > 
+ <div class="card">
+   <!-- <img class="card-img-top img-thumbnail" src="{{property.photoUrl}}" alt=""> --> 
+    <ngx-gallery [options]="galleryOptions" [images]="galleryImages"></ngx-gallery>
+      <div class="card-body">
+        <div class="row">
+          <div class="col-6">
+            <table class="table caption-top table-hover table-striped">
+              <tbody style="text-align: center;">
+                  <tr>
+                      <td>Price:</td>
+                      <td style="color: green; font-weight: bold;">{{property.price}} $</td>
+                  </tr>
+                  <tr>
+                    <td>Location:</td>
+                    <td>{{property.cityName}} / {{property.quarterName}} </td>
+                </tr>
+                <tr>
+                  <td>Property Type:</td>
+                  <td>{{property.propertyTypeName}}</td>
+                </tr> 
+                <tr>
+                 <td>Area(m2):</td>
+                 <td>{{property.areaName}}</td>
+               </tr> 
+               <tr>
+                <td>Furnished:</td>
+                <td *ngIf="property.isFurnished === true"><i style="color: green; font-weight: bold;">YES</i></td>
+                <td *ngIf="property.isFurnished === false"><i style="color: red; font-weight: bold;">NO</i></td>
+              </tr> 
+              <tr>
+                <td>Real Estate:</td>
+                <td>{{property.renterName}}</td>
+            </tr>
+            <tr>
+              <td>Mobile:</td>
+              <td>{{property.renterMobileNo1}} / {{property.renterMobileNo2}} </td>
+          </tr>
+              </tbody>
+              </table>
+            </div>
+            <div class="col-6">
+              <table class="table caption-top table-hover table-striped">
+                <tbody style="text-align: center;">
+                    <tr>
+                        <td>Project:</td>
+                        <td>{{property.projectName}}</td>
+                    </tr>
+                    <tr>
+                      <td>Tower:</td>
+                      <td>{{property.towerName}} </td>
+                  </tr>
+                  <tr>
+                    <td>Block:</td>
+                    <td>{{property.blockName}}</td>
+                  </tr> 
+                  <tr>
+                   <td>Floor:</td>
+                   <td>{{property.floorName}}</td>
+                 </tr> 
+                 <tr>
+                  <td>No:</td>
+                  <td>{{property.propertyNumber}}</td>
+                </tr> 
+                </tbody>
+                </table>
+              </div>
+        </div>
+        
+        
+        </div>
+      </div> 
+</div> 
+    
+ 
+
+
+
+
+
+
+
+
+
+
+  <!--
+<div class="container" >
+  <div class="card">
+    <img class="card-img-top img-thumbnail" src="{{property.photoUrl}}" alt="">
+    <div class="card-body">
+      <div class="col-4">
+        <table class="table caption-top table-hover table-striped">
+          <tbody style="text-align: center;">
+              <tr>
+                  <td>Price:</td>
+                  <td>{{property?.price}}$</td>
+              </tr>
+              <tr>
+                <td>Location:</td>
+                <td>{{property.cityName}} / {{property?.quarterName}} </td>
+            </tr>
+            <tr>
+              <td>Property Type:</td>
+              <td>{{property.propertyTypeName}}</td>
+            </tr> 
+            <tr>
+             <td>Area(m2):</td>
+             <td>{{property.areaName}}</td>
+           </tr> 
+          </tbody>
+          </table>
+      </div>
+    
+    </div>
+   </div>
+  </div>
+  -->
+

@@ -31,6 +31,7 @@ namespace DealApp.API.Models
         public bool? ItHasAproblem { get; set; }
         public bool? IsFurnished { get; set; }
         public ICollection<Photo> Photos { get; set; }
+        //public virtual City Cities { get; set; }
 
 
         public virtual Area Area { get; set; }

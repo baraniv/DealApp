@@ -1,0 +1,81 @@
+<div class="container mt-5">
+  <div *ngFor="let property of properties" >
+    <app-deal-card [property]="property"></app-deal-card>
+  </div> 
+</div>
+
+<!--
+
+   <div *ngFor="let property of properties" >
+      <app-deal-card [property]="property"></app-deal-card>
+    </div> 
+
+  class="col-lg-2 col-md-3 col-sm-6"
+
+  <div class="container mt-5">
+  <div class="row">
+    <div *ngFor="let property of properties" >
+    <app-deal-card [property]="property"></app-deal-card>
+  </div> 
+  </div>
+</div> 
+  
+<div class="container">
+  <div class="jumbotron">
+    <div class="card">
+      <div class="card-header">
+        Properties
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Special title treatment</h5>
+        <table class="table caption-top table-hover table-striped">
+          <caption>List of Properties</caption>
+          <thead>
+            <tr>
+              <th scope="col">ID</th>
+              <th scope="col">Name</th>
+              <th scope="col">Price</th>
+              <th scope="col">Furnished?</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let property of properties">
+              <th>{{property.id}}</th>
+              <td>{{property.propertyName}}</td>
+              <td>{{property.price}}</td>
+              <td>{{property.isFurnished}}</td>
+              <td class="float-right">
+                <button class="btn btn-primary"> EDIT </button>
+                <button class="btn btn-primary"> DELETE </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div> 
+    
+  </div> -->
+ <!-- <table class="table caption-top table-hover table-striped">
+    <caption>List of Properties</caption>
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Name</th>
+        <th scope="col">Price</th>
+        <th scope="col">Furnished?</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let property of properties">
+        <th>{{property.id}}</th>
+        <td>{{property.propertyName}}</td>
+        <td>{{property.price}}</td>
+        <td>{{property.isFurnished}}</td>
+        <td class="float-right">
+          <button class="btn btn-primary badge-pill"><i class="fa fa-eye"></i></button>
+          <button class="btn btn-primary badge-pill"><i class="fa fa-thumbs-up"></i> </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div> -->

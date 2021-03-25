@@ -1,0 +1,46 @@
+<!--<div class="card">
+  <div class="card-img-wrapper">
+    <img class="card-img-top" src="{{property.photos}}" alt="{{property.name}}">
+  </div>
+  <div class="card-body p-1">
+    <h6 class="card-title text-center mb-1"><i class="fa fa-user"></i>
+    {{property.name}}, {{property.price}}
+    </h6>
+    <p class="card-text text-muted text-center">{{property.quarterId}}</p>
+  </div>
+</div> -->
+
+<div class="container mt-3">
+  <a href='' [routerLink]="['/deals/', property.id]" class="custom-card">
+ <div class="card">
+  <div class="row">
+    <div class="col-md-4">
+      <img class="img-fluid" src="{{property.photoUrl}}" alt="">
+    </div>
+    <div class="col-md-6">
+      <h2 class="card-title mt-2"><i class="fa fa-dollar"></i>{{property.price}}</h2>
+      <h6>Property Type: {{property.propertyTypeName}}</h6>
+      <h6 *ngIf="property.isFurnished === true">Furnished: <i style="color: green; font-weight: bold;">Yes</i></h6>
+      <h6 *ngIf="property.isFurnished === false">Furnished: <i style="color: red; font-weight: bold;">No</i></h6>
+      <h6><i class="fa fa-map"></i>
+         {{property.quarterName}} / {{property.cityName}}
+        </h6>
+        <h6><i class="fa fa-address-book"></i>{{property.renterName}} 
+            <i>&nbsp;&nbsp;</i>
+            <i class="fa fa-phone"></i>{{property.renterMobileNo1}}
+         </h6>
+    </div>
+    <div class="col-md-2 pt-3">
+      <ul class="list-inline">
+        <li class="list-inline-item"><button class="btn btn-primary"><i class="fa fa-heart"></i></button></li>
+        <li class="list-inline-item"><button class="btn btn-primary"><i class="fa fa-comments"></i></button></li>
+        <li class="list-inline-item"><button class="btn btn-primary"><i class="fa fa-edit"></i></button></li>
+        <li class="list-inline-item"><button class="btn btn-primary"><i class="fa fa-eraser"></i></button></li>
+      </ul>
+    </div>
+  </div>
+</div>
+</a>
+</div>
+
+

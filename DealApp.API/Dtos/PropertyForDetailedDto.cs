@@ -8,6 +8,20 @@ namespace DealApp.API.Dtos
     {
         public int Id { get; set; }
         public string PropertyName { get; set; }
+        public string CityName { get; set; }
+        public string QuarterName { get; set; }
+        public string TowerName { get; set; }
+        public string AreaName { get; set; }
+        public string BlockName { get; set; }
+        public string CategoryName { get; set; }
+        public string FloorName { get; set; }
+        public string InterfaceName { get; set; }
+        public string ProjectName { get; set; }
+        public string PropertyTypeName { get; set; }
+        public string RenterName { get; set; }
+        public Int64? RenterMobileNo1 { get; set; }
+        public Int64? RenterMobileNo2 { get; set; }
+
         public int? CategoryId { get; set; }
         public int? PropertyTypeId { get; set; }
         public int? CityId { get; set; }
